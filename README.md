@@ -31,7 +31,7 @@ Asahiさんの
 ## 問い合わせ
 
 要望等ありましたら、下記日記にコメントをお願いします。  
-[FF14日記](http://jp.finalfantasyxiv.com/lodestone/character/8564933/blog/2689352/ "外部画像参照が楽になったです～")
+[FF14日記](https://jp.finalfantasyxiv.com/lodestone/character/8564933/blog/3757758/ "NM情報の管理(ツール)についてです～")
 
 ## 作者
 

@@ -20,12 +20,13 @@ Asahiさんの
 ## インストール
 
 1. 下記リンクをクリックしてください。  
-  [FF14エウレカ・アネモス編支援ツールカスタムスクリプト](https://github.com/NohohonNohon/ff14AnemothHtmlCustomScript/master/FF14エウレカ・アネモス編支援ツールカスタムスクリプト.user.js "FF14エウレカ・アネモス編支援ツールカスタムスクリプト")
+  [FF14エウレカ・アネモス編支援ツールカスタムスクリプト](https://raw.github.com/NohohonNohon/ff14AnemothHtmlCustomScript/master/FF14エウレカ・アネモス編支援ツールカスタムスクリプト.user.js "FF14エウレカ・アネモス編支援ツールカスタムスクリプト")
+
 
 2. インストール確認画面で[インストール]をクリックしてください。  
 
 ## 機能
-![機能紹介](https://github.com/NohohonNohon/ff14AnemothHtmlCustomScript/edit/master/data/function.jpg)  
+![機能紹介](https://raw.github.com/NohohonNohon/ff14AnemothHtmlCustomScript/master/data/function.jpg)  
 
 ## 問い合わせ
 

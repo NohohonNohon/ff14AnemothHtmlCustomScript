@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         FF14エウレカ・アネモス編支援ツールカスタムスクリプト
 // @namespace    nohohon
-// @version      1.0
+// @version      1.0.1
 // @description  FF14　エウレカ・アネモス編支援ツールの機能追加・修正を行う
 // @author       nohohon
 // @include      https://mogaasa.web.fc2.com/*
@@ -60,9 +60,10 @@
                 $('#importBtn').on('click', importText);
                 //スクリプトを挿入し、以下の処理を行う
                 //・result関数を上書きし、Wライダの略称を修正(むーむーのネタ帳さんのツールとの互換性のため)
-                //・マップの操作を無効にする
+                //・マップの拡大縮小移動を無効にする
+                //・checkNM関数を上書きし、日付変更時の計算を修正
                 $('<script>')
-                    .attr('src', 'https://cdn.rawgit.com/NohohonNohon/ff14AnemothHtmlCustomScript/1.0.0/customJS.js')
+                    .attr('src', 'https://cdn.rawgit.com/NohohonNohon/ff14AnemothHtmlCustomScript/1.0.1/customJS.js')
                     .appendTo('head');
                 //マップのズームボタン非表示
                 $(".leaflet-control-zoom").css("visibility", "hidden");

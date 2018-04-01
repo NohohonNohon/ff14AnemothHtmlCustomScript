@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         FF14エウレカ・アネモス編支援ツールカスタムスクリプト
 // @namespace    nohohon
-// @version      1.0.1
+// @version      1.0.2
 // @description  FF14　エウレカ・アネモス編支援ツールの機能追加・修正を行う
 // @author       nohohon
-// @include      https://mogaasa.web.fc2.com/*
 // @require      http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 // @grant        none
 // ==/UserScript==
 
+//正式に実装されため、動作しないように@includeを削除
 (function() {
     var importFunction = (function() {
 

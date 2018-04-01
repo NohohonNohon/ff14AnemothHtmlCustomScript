@@ -6,7 +6,7 @@ map1.boxZoom.disable();
 map1.keyboard.disable();
 map1.dragging.disable();
 
-//result関数を上書き
+//result関数を上書き(「Ｗライダ」→「Wライダ」に置換)
 function result(){
 
 var radio = document.getElementsByName('trigger');
@@ -168,4 +168,53 @@ var shout="/sh " + users[0].namer + "、" + users[1].namer + "、" + users[2].na
 
 
 document.getElementById("result").value=shout;
+}
+
+//checkNM関数を上書き(日付変更時の計算を修正)
+function checkNM(){
+var NM = [];
+for(let i = 0; i < 20; i++) {
+if (!(document.getElementById("NM" + ('00' + (i+1)).slice(-2)).value)){
+NM[i] = -1
+}else
+{
+NM[i] = document.getElementById("NM" + ('00' + (i+1)).slice(-2)).value
+}
+}
+var jikan = new Date();
+var hour =('00'+jikan.getHours()).slice(-2);
+var minute =('00'+jikan.getMinutes()).slice(-2);
+var now = parseInt("" + hour + minute,10);
+var timeE = []
+for(let i = 0; i < NM.length; i++) {
+  
+  if(NM[i] == -1){
+  NM[i] = -200;
+  }
+  if(parseInt(NM[i], 10)> now){
+  timeE[i] = parseInt((('00' + NM[i]).slice(-4)).slice(-4,2) ,10) * 60 + parseInt(('00' + NM[i]).slice(-2) ,10) -1440;
+  }
+  else{
+  timeE[i] = parseInt((('00' + NM[i]).slice(-4)).slice(-4,2) ,10) * 60 + parseInt(('00' + NM[i]).slice(-2) ,10);
+  }
+
+}
+var timeL = jikan.getHours() * 60 + jikan.getMinutes()
+
+for(let i = 0; i < NM.length; i++){
+	console.log(timeE[6]+120 ,timeL)
+		if (timeE[i] +120 <= timeL){
+		markinga[i].addTo(map1);
+		markingc[i].remove(map1);
+		markingb[i].remove(map1);
+	}else if(timeE[i] +110 <= timeL){
+		markingc[i].addTo(map1);
+		markingb[i].remove(map1);
+		markinga[i].remove(map1);
+	}else{
+		markingb[i].addTo(map1);
+		markinga[i].remove(map1);
+		markingc[i].remove(map1);
+}
+}
 }
